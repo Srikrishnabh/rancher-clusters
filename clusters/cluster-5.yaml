@@ -70,7 +70,7 @@ spec:
         imageType: ubuntu_containerd
         machineType: n2d-standard-8
         serviceAccount: lsvc-d-caas-kubeio@dev52-test-apps-kubeio.iam.gserviceaccount.com
-      initialNodeCount: 1
+      initialNodeCount: 2
       management:
         autoRepair: true
         autoUpgrade: true
