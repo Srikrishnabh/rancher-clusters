@@ -43,7 +43,7 @@ spec:
       servicesIpv4CidrBlock: 100.66.0.0/17
       servicesSecondaryRangeName: dev52-test-apps-kubeio-argo-rollout-svc-0
       useIpAliases: true
-    kubernetesVersion: v1.32.4-gke.1236007
+    kubernetesVersion: 1.32.4-gke.1236007
     labels: {}
     locations:
     - us-central1-a
@@ -72,7 +72,7 @@ spec:
         autoUpgrade: true
       maxPodsConstraint: 32
       name: group-1
-      version: v1.32.4-gke.1236007
+      version: 1.32.4-gke.1236007
     privateClusterConfig:
       enablePrivateEndpoint: true
       enablePrivateNodes: true
