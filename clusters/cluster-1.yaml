@@ -10,7 +10,6 @@ metadata:
     lifecycle.cattle.io/create.cluster-provisioner-controller: "true"
     lifecycle.cattle.io/create.cluster-scoped-gc: "true"
     lifecycle.cattle.io/create.mgmt-cluster-rbac-remove: "true"
-    management.cattle.io/current-cluster-controllers-version: v1.31.7-gke.1265000
     provisioner.cattle.io/encrypt-migrated: "true"
   generateName: c-
   labels:
@@ -44,7 +43,7 @@ spec:
       servicesIpv4CidrBlock: 100.66.0.0/17
       servicesSecondaryRangeName: dev52-test-apps-kubeio-argo-rollout-svc-0
       useIpAliases: true
-    kubernetesVersion: 1.31.7-gke.1390000
+    kubernetesVersion: v1.32.4-gke.1236007
     labels: {}
     locations:
     - us-central1-a
@@ -73,7 +72,7 @@ spec:
         autoUpgrade: true
       maxPodsConstraint: 32
       name: group-1
-      version: 1.31.7-gke.1390000
+      version: v1.32.4-gke.1236007
     privateClusterConfig:
       enablePrivateEndpoint: true
       enablePrivateNodes: true
