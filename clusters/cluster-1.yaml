@@ -79,7 +79,7 @@ spec:
       enablePrivateNodes: true
     projectID: dev52-test-apps-kubeio
     region: ""
-    subnetwork: dev52-us-central1-test-apps-2
+    subnetwork: projects/pp-d-us-central1-xpn/regions/us-central1/subnetworks/dev52-us-central1-test-apps-2
     zone: us-central1-a
   internal: false
   localClusterAuthEndpoint:
