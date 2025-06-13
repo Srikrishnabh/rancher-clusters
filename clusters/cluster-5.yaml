@@ -77,6 +77,21 @@ spec:
       maxPodsConstraint: 32
       name: group-1
       version: 1.32.4-gke.1236007
+    - autoscaling: {}
+      config:
+        bootDiskKmsKey: projects/pp-d-dev-gce01-kms/locations/us-central1/keyRings/dev-pp-keyring-us-central1/cryptoKeys/dev-pp-vmenc-key-us-central1
+        diskSizeGb: 100
+        diskType: pd-balanced
+        imageType: ubuntu_containerd
+        machineType: n2d-standard-8
+        serviceAccount: lsvc-d-caas-kubeio@dev52-test-apps-kubeio.iam.gserviceaccount.com
+      initialNodeCount: 1
+      management:
+        autoRepair: true
+        autoUpgrade: true
+      maxPodsConstraint: 32
+      name: group-2
+      version: 1.32.4-gke.1236007
     privateClusterConfig:
       enablePrivateEndpoint: true
       enablePrivateNodes: true
